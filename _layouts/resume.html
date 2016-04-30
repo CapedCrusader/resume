@@ -27,17 +27,56 @@
         </div>
 
         <div class="executive-summary" itemprop="description">
-          <p>This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but K.I.S.S.</p>
+          <p>Having worked for an early stage startup and having founded one myself, I have experience in almost all aspects of a tech business. This includes business development, pre sales to product management, software development and delivery, support and so on. I took a break from work for the past one and a half years to finish my masters in computer science from Georgia Tech. Currently I am looking for senior product management roles.  </p>
         </div>
 
+        <!--
         {% if site.resume_looking_for_work == 'yes' %}
         <a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">Contact me</a>
         {% elsif site.resume_looking_for_work == 'no' %}
         <a class="contact-button not-looking">I'm not looking for work right now.</a>
         {% else %}
         {% endif %}
-
+		-->
       </header>
+
+      {% if site.resume_section_education %}
+      <!-- begin Education -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Education</h2>
+        </header>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">Georgia Tech</h3>
+          <h4 class="resume-item-details" itemprop="description"> Master of Science in Computer Science &bull; 2014 &mdash; 2016</h4>
+          <p class="resume-item-copy">Specialisation in Interactive Intelligence</p>
+          <!--
+          <p class="resume-item-copy">If you had any meaningful roles at college, feel free to write about them here.</p>
+          -->
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">University of California Berkeley</h3>
+          <h4 class="resume-item-details" itemprop="description"> Certificate in Business Administration &bull; 2012 &mdash; 2013</h4>
+          
+          <p class="resume-item-copy">Extension Program</p>
+          
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">National institute of Technology Silchar</h3>
+          <h4 class="resume-item-details" itemprop="description"> Bachelor of Technology, Electronics and Communication Engg. &bull; 2005 &mdash; 2009</h4>
+          
+          <p class="resume-item-copy">Recipient of the institute gold medal for scoring the highest CGPA </p>
+          
+        </div>
+
+      </section>
+      <!-- end Education -->
+      {% endif %}
+
 
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
@@ -49,56 +88,47 @@
 
         <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details" itemprop="description">Safety Inspector &bull; Nov, 1980 &mdash; Present</h4>
-          <p class="resume-item-copy">Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points:</p>
+          <h3 class="resume-item-title" itemprop="name">Slashroot Labs</h3>
+          <h4 class="resume-item-details" itemprop="description">Founder &bull; Sept, 2012 &mdash; Aug, 2014</h4>
+          <!--<p class="resume-item-copy">Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points:</p> -->
           <ul class="resume-item-list">
-            <li>Ate lots of donuts</li>
-            <li>Fell asleep rarely</li>
-            <li>Left promptly at end of day (sometimes earlier)</li>
+            <li>Designed and implemented a “search within video" feature for NPTEL, making it easier for 4 lakh+ users to discover lecture content with relevant keywords.</li>
+            <li>Started our custom software business enabling a constant cash flow for Slashroot.</li>
+            <li>Architected and coded our publishing platform Golpo with custom API’s for web and mobile applications.</li>
+            <li>Coded and deployed several web applications for clients with Golpo at the backend.</li>
           </ul>
-          <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p>
+          <!-- <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p> -->
 
         </div><!-- end of resume-item -->
 
         <!-- another resume item -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Sir Putt-A-Lot's Merrie Olde Fun Centre</h3>
-          <h4 class="resume-item-details" itemprop="description">Windmill Crank Operator &bull; Jun, 1978 &mdash; Sept, 1979</h4>
-          <p class="resume-item-copy">If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.</p>
+          <h3 class="resume-item-title" itemprop="name">Seer Akademi</h3>
+          <h4 class="resume-item-details" itemprop="description">Entrepreneur in Residence &bull; Feb, 2010 &mdash; Aug, 2012</h4>
+          <!--<p class="resume-item-copy">If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.</p> -->
+          <ul class="resume-item-list">
+            <li>Co-engineered and deployed the global classroom technology in multiple locations across India, enabling seamless live streaming of classes for thousands of students.</li>
+            <li>Created 3D educational video content used by students across multiple locations in India.</li>
+            <li>Developed e-publications in multiple Indian languages for academic and general use.</li>
+          
+          </ul>
 
         </div><!-- end of resume-item -->
 
         <!-- by now you're getting the picture... -->
+        <!--
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">Simpson Lazer Tag</h3>
           <h4 class="resume-item-details" itemprop="description">Front Desk Attendant &bull; Jun, 1975 &mdash; May, 1978</h4>
           <p class="resume-item-copy">Boy, when Marge first told me she was going to the Police Academy, I thought it would be fun and exciting, you know, like the movie... Spaceballs. But instead, it's been painful and disturbing, like the movie Police Academy.</p>
 
-        </div><!-- end of resume-item -->
+        </div>--><!-- end of resume-item -->
 
       </section>
       <!-- end Experience -->
       {% endif %}
 
-      {% if site.resume_section_education %}
-      <!-- begin Education -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Education</h2>
-        </header>
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Springfield College</h3>
-          <h4 class="resume-item-details" itemprop="description">Associates Degree, Business Management &bull; 1984 &mdash; 1986</h4>
-          <p class="resume-item-copy">If you had any meaningful roles at college, feel free to write about them here.</p>
-        </div>
-
-      </section>
-      <!-- end Education -->
-      {% endif %}
-
+      
       {% if site.resume_section_projects %}
       <!-- begin Projects -->
       <section class="content-section">
@@ -108,15 +138,102 @@
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://donutlocator.io">donutfinder.io</a></h3>
-          <h4 class="resume-item-details">Founder & Primary Developer &bull; 2012 &mdash; Present</h4>
-          <p class="resume-item-copy">Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.</p>
+          <h3 class="resume-item-title"><a href="http://nptel.ac.in/course.php">Search within Video feature for IIT NPTEL videos</a></h3>
+          <h4 class="resume-item-details">Project manager and Primary Developer &bull; 2013 </h4>
+          <p class="resume-item-copy">This project enabled NPTEL to launch a "search within video" feature to its users. It helped in searching for specific concepts in lectures from all classes.  I was the technical architect and conceptualised the entire project and worked on the implementation with my team members. Technologies used were python and php scripts, SQL and javascripts
+		</p>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Donut Eater's User Group</h3>
-          <h4 class="resume-item-details">Co-Founder & Organizer &bull; 2007 &mdash; Present</h4>
-          <p class="resume-item-copy">DEUG is a local monthly meetup in Springfield where we share all the latest tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.</p>
+          <h3 class="resume-item-title"><a href="http://slashroot.herokuapp.com/posts/new">Webapp for content publishing</a></h3>
+          <h4 class="resume-item-details">Product manager and Primary Developer &bull; 2013 </h4>
+          <p class="resume-item-copy">This webapp showcases one of the use cases of SlashrootLabs's content publishing platform Golpo. The front end was developed using HTML5, CSS3, Javascript and Ajax. The back end of the webapp was built using Ruby on Rails.
+			</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="http://saasdemo.herokuapp.com/">Webapp for online procurement of software licenses</a></h3>
+          <h4 class="resume-item-details">Product manager and Primary Developer &bull; 2014 </h4>
+          <p class="resume-item-copy">This is a prototype webapp built using Golpo and <a href="https://github.com/spree/spree">spree</a>. The idea was to apply ecommerce workflow to license purchases.
+			</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Design AI agent for solving Raven's progressive matrices</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2014 </h4>
+          <p class="resume-item-copy">One way of evaluating the success of Knowledge Based AI agents is to have them take human intelligence tests like Raven's test. The agent developed in this project was able to solve 2x1, 2x2 and 3x3 Raven's progressive matrices problem using both propositional and visual representations. The agent was coded in python and also used libraries like OpenCV for processing the images in the visual analogy problems.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Analyze cache and branch predictor performances in the SESC simulator</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2014 </h4>
+          <p class="resume-item-copy">Modified the source code of the SESC simulator in C++ to analyze the performance of tournament and hierarchical predictors, also categorized and analyzed the distribution of compulsory, conflict, capacity and coherence misses.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Apply and compare supervised learning algorithms</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2015 </h4>
+          <p class="resume-item-copy">Applied supervised learning algorithms namely decision trees, boosting, knn, neural nets and support vectors machines to the iris and breast cancer diagnosis datasets. Used R to generate the results and performed a thorough analysis.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Apply and compare clustering and dimensionality reduction algorithms</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2015 </h4>
+          <p class="resume-item-copy">Applied clustering (KMeans and Expectation Maximization) and dimensionality reduction (principal component analysis, independent component analysis and random projections) to the iris and breast cancer diagnosis datasets. Used Weka to generate the results and performed a thorough analysis.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Design and solve MDP's using value iteration, policy iteration and reinforcement learning</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2015 </h4>
+          <p class="resume-item-copy">Designed Markov Decision Processes using the GridWorld domain as reference in the <a href="https://github.com/jmacglashan/burlap">BURLAP</a> library. Solved the MDP's using policy iteration, value iteration and QLearning algorithm and performed a thorough analysis of the results. </p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Apply random search algorithms to optimisation problems</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2015 </h4>
+          <p class="resume-item-copy">Applied and analysed random search algorithms namely simulated annealing, hill climbing, genetic algorithm and MIMIC to three optimisation problems namely knapsack, traveling salesman and four peaks. The algorithms were tested using the respective implementations in the <a href = "https://github.com/pushkar/ABAGAIL">ABAGAIL</a> library. </p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Non photo realistic rendering to images and real time video</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2015 </h4>
+          <p class="resume-item-copy">Applied edge detection techniques and smoothing filter mechanisms to create various non photo realistic rendering effects like watercolor, sepia, cartoon, pencil sketch, warming and cooling effects. The effects were applied to images and to real time video feed obtained from the webcam.
+			</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Predict the motion of a robot using Kalman filters</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2015 </h4>
+          <p class="resume-item-copy">Used both applied and extended Kalman filters to predict the motion of a robot in a bounding box. The techniques were used primarily to determine the velocity of a robot, deviation in the linear motion of the robot and change in the heading when the robot bounced off the bounding box.
+			</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Proxy Server with Remote Procedure Call</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2015 </h4>
+          <p class="resume-item-copy">Developed First In First Out (FIFO), Last In First Out (LIFO), Least Recently Used (LRU) and Random Page Eviction algorithms in C for maintaining cache coherence. 
+			</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Barrier Synchronization</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2015 </h4>
+          <p class="resume-item-copy">Developed OpenMP, MPI and OpenMP-MPI barrier synchronization in C for a symmetric multiprocessor system. 
+			</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">GT threads library</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2015 </h4>
+          <p class="resume-item-copy">Developed a user level thread library similar to PThreads in C.
+			</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Recoverable Virtual Memory</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2015 </h4>
+          <p class="resume-item-copy">Developed a RVM system for creating persistent memory segments in C. 
+			</p>
         </div>
 
       </section>
@@ -132,10 +249,11 @@
         </header>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Donut design</h4>
-          <p class="resume-item-copy">Sprinkle art, icing design, eclair management, taste testing, donut/coffee pairing research</p>
-        </div>
+          <h4 class="resume-item-details">Web frameworks: Ruby on Rails, Django.</h4>
+          <h4 class="resume-item-details">Languages: C, Python, Ruby</h4>
 
+        </div>
+        <!--
         <div class="resume-item">
           <h4 class="resume-item-details">Craft beer brewing</h4>
           <p class="resume-item-copy">Hops inspection, brew testing, distribution management, bottle label design, festival and event management</p>
@@ -145,7 +263,7 @@
           <h4 class="resume-item-details">Family leadership</h4>
           <p class="resume-item-copy">Bread winning, conflict resolution, couch inspection, TV longevity testing</p>
         </div>
-
+		-->
       </section>
       <!-- end Skills -->
       {% endif %}
@@ -205,6 +323,7 @@
       {% endif %}
 
       {% if site.resume_section_links %}
+
       <!-- begin Links -->
       <section class="content-section">
 
@@ -222,12 +341,12 @@
       </section>
       <!-- end Links -->
       {% endif %}
-
+      
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
+        
+        <p class="footer-line">(c) 2016 Sandeep Chanda</p>
       </footer>
-
+	 
     </div>
 
   </body>
