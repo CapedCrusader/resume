@@ -50,7 +50,27 @@
         <b>Voice</b>&nbsp; &nbsp; +91 99721 98658<br>
         
        </section>
+	    
+      {% if site.resume_section_summary %}
+      
+      <section class="content-section">
 
+        <header class="section-header">
+          <h2>Professional Summary</h2>
+        </header>
+	      
+	<ul class="resume-item-list">
+            <li>Experienced in understanding and defining product requirements and business use cases. </li>
+            <li>Involved in all phases of software development life cycle and has worked in capacity of developer, technical lead, project manager and requirement analyst.</li>
+            <li>Has strong understanding of Hadoop, Hive, Spark and machine learning concepts.</li>
+            <li>Has strong understanding of algorithmic and data structure concepts.</li>
+	    <li>A self-learner with good technical, analytical and debugging skills.</li>
+        </ul>
+	      
+      </section>
+      {% endif %}
+	    
+	    
       {% if site.resume_section_education %}
       <!-- begin Education -->
       <section class="content-section">
@@ -147,9 +167,31 @@
       <!-- end Experience -->
       {% endif %}
 
-      <!--
-      {% if site.resume_section_projects %}
+	    
+	    
+      {% if site.resume_section_roles %}
       
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Roles and responsibilities</h2>
+        </header>
+	      
+	<ul class="resume-item-list">
+            <li>Liaison with the client’s technology and infrastructure teams to facilitate/ coordinate management of issues and dependencies.</li>
+            <li>Create and perform reviews for client deliverables: Requirement specifications, Technical Design, Cookbooks and user guides</li>
+            <li>Lead a team to develop a module with excellent quality considerations.</li>
+            <li>Act as an interface between the team members and project manager, solution architects or clients.</li>
+	    <li>Assist the project manager in ongoing risks, issues and dependency management.</li>
+            <li>Assist other solution architects and tech leads in high/low level design decisions.</li>
+	    <li>Drive training and mentoring activities within the team.</li>
+        </ul>
+	      
+      </section>
+      {% endif %}
+      
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
       <section class="content-section">
 
         <header class="section-header">
@@ -255,9 +297,9 @@
       
 
       </section>
-      
+      <!-- end Projects -->
       {% endif %}
-      -->
+      
       {% if site.resume_section_skills %}
       <!-- begin Skills -->
       <section class="content-section">
@@ -268,15 +310,15 @@
 
         <div class="resume-item">
         
-          <b>Languages:</b> C, Python (Proficient)<br>
-          <b>Data Analysis:</b> R<br> 
-          <b>Version Control:</b> git<br>
-        
+          <b>Languages:</b> C, Python (Proficient), Scala, SQL<br>
+          <b>Machine Learning Libraries :</b> scikit-learn, spark-mllib<br> 
+          <b>Big Data Technologies:</b> Hadoop, Hive, Spark<br>
+        <!--
         <p>Prior experience:</p>
           <b>EDA tools:</b> Synopsys VCS, DC, MVSIM, MVRC<br>
           <b>Web technologies:</b>  CSS3, Django, HTML5, JavaScript, Ruby on Rails<br>
           <b>Languages:</b> Ruby<br>
-
+	-->
         </div>
         <!--
         <div class="resume-item">
