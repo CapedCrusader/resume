@@ -1,6 +1,6 @@
 # Site settings
 title: "Sandeep Chanda"
-description: "Engineer working at the intersection of big data and machine learning"
+description: "Machine Learning engineer/ Data Scientist"
 
 # Build settings
 markdown: kramdown
@@ -11,9 +11,9 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Sandeep Chanda"
-resume_title:                   "Seeking challenging engineering roles"
+resume_title:                   "Machine Learning engineer/ Data Scientist"
 resume_contact_email:
-  "sandp.chanda@gmail.com"
+  "https://in.linkedin.com/in/sandeepchanda"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
@@ -36,7 +36,7 @@ resume_section_associations:    false
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
-  resume_github_url:            "https://github.com/capedcrusader"
+  resume_github_url:            "https://github.com/chandasandeep"
   #resume_twitter_url:           "https://twitter.com/iamsandeepc"
   #resume_dribbble_url:          "https://dribbble.com/jag"
   # resume_facebook_url:          "insert Facebook URL here"
