@@ -39,17 +39,17 @@
         {% endif %}
 		-->
       </header>
-      
+      <!--
       <section class="content-section">
 
         <header class="section-header">
           <h2>Contact</h2>
         </header>
         
-        <b>Connect</b>&nbsp; &nbsp; https://in.linkedin.com/in/sandeepchanda<br>
+         <a href="https://in.linkedin.com/in/sandeepchanda">Linkedin profile</a><br>
         
        </section>
-	    
+      -->    
       {% if site.resume_section_summary %}
       
       <section class="content-section">
@@ -122,19 +122,32 @@
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name"><a href="https://www.zaloni.com/">Zaloni India</a></h3>
           <h4 class="resume-item-details" itemprop="description">Senior Data Scientist &bull; Sept., 2016 &mdash; Till date</h4>
-          <p class="resume-item-copy">I founded a startup which provided mobile app and responsive website development services to SMEs. I ran it successfully for two years, before winding up operations.</p> 
-          <br>
+          <p class="resume-item-copy"><br>
           <h5 class="resume-item-details" itemprop="description">Projects undertaken:</h5> 
-          
-	<!--	
-	<ul class="resume-item-list">
-            <li><b>Designed and implemented the <a href="http://nptel.ac.in/course.php">"search within video"</a> feature for IIT NPTEL</b>, making it easier for 400k+ users to discover lecture content with relevant keywords.  I conceptualised the entire project and worked on the implementation with my team members. Technologies used were Python and PHP scripts, SQL and JavaScript. </li>
-            <li><b>Started a custom software business</b> to enable a constant cash flow for Slashroot.</li>
-            <li><b>Architected and developed a publishing platform, Golpo</b> with custom APIs for Web and mobile applications. This <a href="http://slashroot.herokuapp.com/posts/new">webapp</a> showcases one of the use cases of Slashroot Labs' content publishing platform Golpo. The front end was developed using HTML5, CSS3, JavaScript and Ajax. The back end of the webapp was built using Ruby on Rails. </li>
-            <li><b>Coded and deployed several Web applications</b> for clients with Golpo at the backend. This is a prototype <a href="http://saasdemo.herokuapp.com/">webapp</a> for online procurement of software licenses built using Golpo and spree.</li>
-          </ul>
-	-->
-          <!-- <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p> -->
+          <h5 class="resume-item-details" itemprop="description">Client : Internal</h5> 
+	  <h5 class="resume-item-details" itemprop="description">Project : Data Master for Zaloni Data Platform</h5> 
+	  <p class="resume-item-copy">Data Master project involved designing and developing the core matching engine capable of matching millions of records. It supports multiple use cases like master data management, identifying duplicate records, data standardization and so on. I was involved in the design and implementation of some of the key components of this product.<br>
+          <h6 class="resume-item-details" itemprop="description">Environment : Spark, PySpark, Hadoop, Hive, Python, Scala, Git, Maven</h6>
+	  
+	  <h5 class="resume-item-details" itemprop="description">Client : A leading US telecom service provider</h5> 
+	  <h5 class="resume-item-details" itemprop="description">Project : Application Analytics POC</h5> 
+	  <p class="resume-item-copy">The client wanted a holistic picture of the network performance using data from different probes and devices. The goal was to devise algorithms which will help predict any network failures using the current and historical trends. This in turn will help the client to proactively change policies to mitigate impending failures and maintain customer SLA’s. I devised and implemented the core prediction algorithm for the application.<br>
+	  <h6 class="resume-item-details" itemprop="description">Environment : Python, scikit-learn, Git</h6>
+	  
+	  <h5 class="resume-item-details" itemprop="description">Client : A leading US commercial bank</h5> 
+	  <h5 class="resume-item-details" itemprop="description">Project : Data correlation POC</h5> 
+	  <p class="resume-item-copy">The client has data residing in thousands of hive tables with downstream applications acting as consumers. Much of these data are replicated across tables. This POC was an effort to estimate the correlation among different hive tables. I conceptualized the low-level solution design which was crucial for the success of the POC. I also designed the pipeline to output table correlation with a fine-grained view of the field level correlation.<br>	
+	
+	  <h5 class="resume-item-details" itemprop="description">Client : A UAE based global airline</h5> 
+	  <h5 class="resume-item-details" itemprop="description">Project : Master Data Management MVP</h5> 
+	  <p class="resume-item-copy">Different attributes of the same customer data reside in silos within the organizational information hierarchy. The client through this MDM project wanted to generate a holistic customer 360 view to make personalized recommendations to their customers and in turn better their offerings. I contributed to high and low-level design for the MDM solution and environment configurations. I also participated in client meetings for data discovery and designing the data model to be used for generating the customer master record.<br>
+	  <h6 class="resume-item-details" itemprop="description">Environment : Spark, Hadoop, Hive, Git</h6>
+	  
+	  <h5 class="resume-item-details" itemprop="description">Client : A luxury retail group based in Dubai</h5> 
+	  <h5 class="resume-item-details" itemprop="description">Project : Customer Data Hub</h5> 
+	  <p class="resume-item-copy">The retail group consists of different luxury brands with each brand maintaining their own CRM systems. The Customer Data Hub uniquely identifies a customer registered across different CRM’s and calculates KPI’s (total transactions and so on) to generate a customer 360 view. I was the solution architect for this project and proposed the ingestion pipeline for their various brands CRM’s, prepared the high-level and low-level design. I also developed the entire customer 360 logic using spark and HQL.<br>
+	  <h6 class="resume-item-details" itemprop="description">Environment : Spark, Hadoop, Hive, Shell Script, Git</h6>  
+	<!-- <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p> -->
 
         </div><!-- end of resume-item -->
 	      
@@ -329,8 +342,8 @@
 
         <div class="resume-item">
         
-          <b>Languages:</b> Python, Scala, SQL<br>
-          <b>Machine Learning Libraries :</b> scikit-learn<br> 
+          <b>Programming Languages:</b> Python, Scala, HQL, Shell Scripting, C<br>
+          <b>Machine Learning Libraries/ Concepts :</b> Scikit-learn, Deep Learning<br> 
           <b>Big Data Technologies:</b> Hadoop, Hive, Spark<br>
         <!--
         <p>Prior experience:</p>
